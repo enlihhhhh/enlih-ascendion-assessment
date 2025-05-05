@@ -15,9 +15,9 @@ cd enlih-ascendion-assessment
 ```
 enlih-ascendion-assessment/
 │
-|-- main.py 
-|-- web_scraping.ipynb
-|-- cityu_tech300_startups.csv   
+├── main.py 
+├── web_scraping.ipynb
+├── cityu_tech300_startups.csv   
 ├── requirements.txt
 ├── README.md                
 ``` 
