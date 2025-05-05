@@ -1,5 +1,8 @@
 # En Lih's Ascendion Technical Assessment
 
+## Overview
+This repository contains the code for the chosen task for Ascendion's assessment: ```Option 1: Web-scraping``` 
+
 ## How to access the repository
 Run the following code to clone the repository to your local directory, ensure that you have ```Git``` installed on your system
 ```bash
