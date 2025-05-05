@@ -6,7 +6,7 @@ Run the following code to clone the repository to your local directory, ensure t
 git clone https://github.com/enlihhhhh/enlih-ascendion-assessment.git
 ```
 
-Ensure that you ```cd to the folder``` by running the following code
+Ensure that you navigate to the folder by running the following code
 ```bash
 cd enlih-ascendion-assessment
 ```
@@ -81,7 +81,7 @@ python -m venv ascendion_env
 Steps on Virtual Environment management
 """ 
 ascendion_env\Scripts\activate # Activate env on Windows
-source ascendion_env/bin/activate # Activate env on macOS / Linus
+source ascendion_env/bin/activate # Activate env on macOS / Linux
 
 # Deactivate environment
 deactivate
@@ -89,9 +89,27 @@ deactivate
 ---
 
 ### **2. Install Required Libraries**
-Install all required libraries using the provided requirements.txt file:
+Install all required libraries using the provided requirements.txt file
 ```bash
 pip install -r requirements.txt
 ```
 
+## Running of Code
 
+Ensure that you are currently on the folder directory and run the following code to run the python script
+
+```bash
+python3 main.py
+```
+
+After the script finishes running, the output will be saved in the same directory as the script, under the filename ```cityu_tech300_startups.csv```.
+
+### Sample Output
+
+| Company Name     | CityU URL                                        | Company Website           | Email   |
+|------------------|--------------------------------------------------|----------------------------|------------------------|
+| 5th Immersiv | https://www.cityu.edu.hk/hktech300/start-ups/seed-fund-teams/5th-immersiv | https://brideunionhk.com  | martin@bride-union.com |
+
+The scraping process may take up to an hour depending on your internet speed and system performance.
+
+Note: If you wish to analyse the invidual outputs by cells, refer to the ```web_scraping.ipynb``` Jupyter Notebook for more instructions
