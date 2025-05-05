@@ -21,7 +21,7 @@ if file_exists:
 else:
     with open(OUTPUT_CSV, mode='w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(["Company Name", "CityU URL", "Company Website", "Company Email Address"])
+        writer.writerow(["Company Name", "CityU URL", "Company Website", "Email"])
 
 
 # ============ Setup Selenium ============
@@ -71,6 +71,10 @@ def extract_profile_details(profile_soup):
             if a_tag:
                 email = a_tag.text.strip()
                 break  # Stop once found
+
+    # If no email or website found, return "No Info Found" else return the found values
+    email = email or "No Info Found"
+    website = website or "No Info Found"
 
     return website, email
 
